@@ -25,6 +25,9 @@ const CxltToastr = {
         }
 
         Vue.prototype.$toast = {
+            show(obj, type) {
+                return showToast(obj, type)
+            },
             success(obj) {
                 return showToast(obj, 'success')
             },
